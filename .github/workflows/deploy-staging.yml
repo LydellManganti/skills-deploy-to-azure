@@ -34,7 +34,7 @@ jobs:
     needs: build
     name: Build image and store in Github Container Registry
     steps:
-      - name: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Download built artifact
         uses: actions/download-artifact@v4
